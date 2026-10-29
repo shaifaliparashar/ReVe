@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Projet ReVe</title>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+    a { color: #1772d0; text-decoration:none; }
+    a:focus, a:hover { color: #f09228; text-decoration:none; }
+    body,td,th,tr,p,a { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 14px; }
+    strong { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 14px; }
+    heading { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 22px; }
+    name { font-family: 'Lato', Verdana, Helvetica, sans-serif; font-size: 32px; }
+    img { max-width: 100%; }
+    .langsw { text-align:right; font-size:13px; margin:0 0 6px; }
+    .langsw a { cursor:pointer; color:#1772d0; }
+    .langsw a.active { color:#222; font-weight:700; cursor:default; }
+    .langsw a.active:hover { color:#222; }
+    .langsw span { color:#ccc; margin:0 5px; }
+    .section { margin-top: 34px; }
+    .section hr { border: none; border-top: 1px solid #e4e4e4; margin: 0 0 18px; }
+    .benefits { text-align: justify; padding-left: 20px; margin: 6px 0 0; }
+    .benefits li { margin-bottom: 6px; }
+    figure.schema { margin: 0; text-align: center; }
+    figure.schema img { border: 1px solid #e4e4e4; border-radius: 6px; width: 100%; height: auto; background: #fff; }
+    figure.schema figcaption { color: #666; margin-top: 8px; }
+    .doc { border: 1px solid #e0e0e0; border-radius: 8px; padding: 14px 16px; margin-bottom: 12px; }
+    .doc .t { font-weight: 700; font-size: 16px; }
+    .req { background:#eef4fb; color:#1772d0; border:1px solid #cfe0f3; border-radius:999px;
+           font-size:11px; font-weight:700; letter-spacing:.04em; text-transform:uppercase;
+           padding:2px 8px; margin-left:8px; vertical-align:middle; white-space:nowrap; }
+    .doc p { color:#555; margin:6px 0 10px; text-align: justify; }
+    .btnx { display:inline-block; font-family:'Lato',Verdana,sans-serif; font-size:13px; font-weight:700;
+            color:#1772d0; background:#fff; border:1px solid #1772d0; border-radius:6px;
+            padding:7px 13px; margin:0 8px 6px 0; cursor:pointer; text-decoration:none; }
+    .btnx:hover { color:#fff; background:#1772d0; }
+    .btnx.solid { color:#fff; background:#1772d0; }
+    .btnx.solid:hover { background:#1360b8; color:#fff; }
+    .btnx.done { color:#1a7a3c; border-color:#1a7a3c; background:#eef8f0; cursor:default; }
+    .btnx:disabled, .btnx[disabled] { opacity:.5; cursor:not-allowed; }
+    .gatebox { border:1px solid #e0e0e0; border-radius:8px; padding:16px; background:#fafafa; }
+    .gatehint { background:#fff8e6; border:1px solid #f0e2b8; border-radius:6px; color:#7a5c00;
+                padding:9px 12px; margin-bottom:14px; font-size:13px; }
+    .gatehint[hidden] { display:none; }
+    label.chk { display:block; cursor:pointer; margin-bottom:14px; color:#999; }
+    label.chk.on { color:#222; }
+    label.chk input { margin-right:8px; vertical-align:middle; }
+    .confirm { border:1px solid #1a7a3c; background:#eef8f0; border-radius:8px; padding:16px; }
+    .confirm[hidden] { display:none; }
+    .confirm .t { font-weight:700; font-size:16px; color:#1a7a3c; margin-bottom:6px; }
+    .confirm p { text-align:justify; margin:0 0 8px; }
+    .email { font-weight:700; background:#fff; border:1px solid #cfe0f3; border-radius:6px;
+             padding:5px 9px; user-select:all; display:inline-block; }
+    .foot { margin-top:40px; padding-top:16px; border-top:1px solid #e4e4e4; color:#777; font-size:12px; }
+    .foot p { margin:4px 0; }
+    </style>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-86789415-1', 'auto');
+  ga('send', 'pageview');
+    </script>
+</head>
+<body>
+<table width="840" border="0" align="center" cellspacing="0" cellpadding="0" style="max-width:100%;">
+  <tr><td>
+    <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tr><td valign="middle">
+      <div class="langsw"><a id="lfr" data-lang="fr">Français</a><span>|</span><a id="len" data-lang="en">English</a></div>
+      <p align="center"><name data-i18n="title"></name></p>
+      <div id="welcome" data-i18n="welcome"></div>
+      <div class="section">
+        <heading data-i18n="how_title"></heading><hr>
+        <figure class="schema">
+          <img id="schemaImg" alt="">
+          <figcaption><a id="schemaFull" href="#" target="_blank" rel="noopener" data-i18n="schema_full"></a></figcaption>
+        </figure>
+      </div>
+      <div class="section">
+        <heading data-i18n="docs_title"></heading><hr>
+        <p style="text-align:justify;color:#555;" data-i18n="docs_intro"></p>
+        <div class="doc">
+          <div class="t" data-i18n="notice_name"></div>
+          <p data-i18n="notice_desc"></p>
+          <a class="btnx" id="noticeDl" data-i18n="notice_dl"></a>
+        </div>
+        <div class="doc">
+          <div class="t"><span data-i18n="consent_name"></span> <span class="req" data-i18n="consent_req"></span></div>
+          <p data-i18n="consent_desc"></p>
+          <button class="btnx solid" id="consentOpen" type="button" data-i18n="consent_open"></button>
+          <a class="btnx" id="consentDl" data-i18n="consent_dl"></a>
+        </div>
+      </div>
+      <div class="section">
+        <heading data-i18n="join_title"></heading><hr>
+        <p style="text-align:justify;color:#555;" data-i18n="join_intro"></p>
+        <div class="gatebox" id="joinForm">
+          <div class="gatehint" id="gateHint" data-i18n="gate_hint"></div>
+          <label class="chk" id="chkWrap"><input type="checkbox" id="readCheck" disabled> <span data-i18n="check_label"></span></label>
+          <button class="btnx solid" id="enrollBtn" type="button" disabled data-i18n="enroll"></button>
+        </div>
+        <div class="confirm" id="confirmBox" hidden>
+          <div class="t" data-i18n="confirm_title"></div>
+          <div data-i18n="confirm_html"></div>
+          <p><span class="email">caroline.huyard@univ-lille.fr</span> &nbsp; <a class="btnx" id="writeUs" data-i18n="write_us"></a></p>
+        </div>
+      </div>
+      <div class="foot">
+        <p><strong>ReVe</strong> &mdash; <span data-i18n="foot_leads"></span></p>
+        <p data-i18n="foot_funding"></p>
+        <p data-i18n="credits"></p>
+      </div>
+    </td></tr></table>
+  </td></tr>
+</table>
+<script type="application/json" id="i18n">{"fr": {"title": "Bienvenue sur la page du projet de recherche ReVe&nbsp;!", "welcome": "<p style=\"text-align:justify\">Vous avez beaucoup de vêtements, et pourtant vous avez souvent l&rsquo;impression de ne rien avoir à mettre&nbsp;? Vous achetez peu de vêtements, en partie parce que vous trouvez l&rsquo;offre insatisfaisante&nbsp;? Vous avez le sentiment d&rsquo;acheter une quantité raisonnable de vêtements, et vous avez envie d&rsquo;en parler&nbsp;? Si d&rsquo;une manière ou d&rsquo;une autre, l&rsquo;habillement est un sujet qui vous intéresse, vous êtes au bon endroit.</p>\n<p style=\"text-align:justify\">Nous cherchons des participantes pour contribuer à un projet de recherche porté par le Centre National de la Recherche Scientifique &ndash; CNRS, le grand établissement public français de recherche scientifique. Son objectif est de mieux comprendre le phénomène de la consommation insatisfaisante de vêtements, et d&rsquo;explorer une solution.</p>\n<p style=\"text-align:justify\">Ce projet développe un outil informatique servant de support à un conseil vestimentaire personnalisé, fondé sur la silhouette, les mensurations et les couleurs des personnes. Il l&rsquo;utilise ensuite sur des personnes réelles, dont vous, pour évaluer dans quelle mesure un tel outil est susceptible d&rsquo;orienter leur consommation de vêtements vers ceux qui leur conviennent le mieux, sans perdre de temps ni d&rsquo;argent à en acheter d&rsquo;autres. Dans cette démarche, le vêtement n&rsquo;est plus un objet défini par des caractéristiques (bon marché, durable, respirant, léger, iconique, etc.), comme le conçoivent actuellement les stylistes, mais un objet qui vaut par sa fonction (habiller une personne donnée, avec sa silhouette, ses mensurations, ses couleurs et ses besoins d&rsquo;usage&nbsp;: aller au travail, faire du vélo, danser, etc.).</p>\n<p style=\"text-align:justify\">Le conseil vestimentaire personnalisé s&rsquo;appuie sur les techniques anciennes du portrait, où les vêtements de la personne sont choisis pour s&rsquo;accorder avec la silhouette, les proportions et les couleurs (des cheveux, des yeux, de la peau) de la personne. L&rsquo;outil informatique part de la mesure de ces éléments, sur votre personne, avec des instruments précis, et génère ensuite un ou plusieurs portraits numériques, en 3D, de vous, habillée avec des vêtements qui vous correspondent selon ces critères.</p>\n<p style=\"text-align:justify\">Nous engageons en parallèle une discussion avec vous, dans laquelle nous commençons par vous questionner sur votre expérience de l&rsquo;habillement et vos achats de vêtements. Nous vous présentons ensuite votre ou vos portraits numériques, où vous êtes habillée de ces vêtements qui vous sont adaptés et qui constituent notre recommandation de conseil personnalisé. Nous vous demandons alors votre réaction dessus et poursuivons la discussion. Au terme de ce premier entretien, nous vous remettons une copie papier et numérique de votre ou vos portraits numériques habillés.</p>\n<p style=\"text-align:justify\">À la suite de cet entretien, nous vous demandons de suivre vos achats de vêtements, en nous faisant parvenir régulièrement une copie de vos factures de vêtements.</p>\n<p style=\"text-align:justify\">Six mois plus tard, nous reprenons contact avec vous pour un second entretien, qui est aussi le dernier. Nous discutons alors avec vous de la manière dont votre ou vos portraits numériques habillés ont, ou non, modifié votre relation au vêtement et à vos achats de vêtements, et si oui, dans quelle direction, et dans tous les cas, pourquoi.</p>\n<p style=\"text-align:justify\"><strong>En participant à cette étude, vous bénéficiez&nbsp;:</strong></p>\n<ul class=\"benefits\">\n<li>d&rsquo;un récapitulatif de vos principales mensurations, ce qui peut être utile pour choisir la bonne taille lors de l&rsquo;achat d&rsquo;un vêtement,</li>\n<li>d&rsquo;un conseil personnalisé sur les types de vêtements qui sont le plus susceptibles de vous convenir,</li>\n<li>d&rsquo;un document avec vos portraits numériques,</li>\n<li>d&rsquo;une gratification, en compensation du temps que vous consacrez à l&rsquo;étude.</li>\n</ul>", "how_title": "Comment se déroule l&rsquo;étude", "schema_alt": "Schéma illustré du déroulement du projet ReVe", "schema_full": "Ouvrir le schéma complet (PDF)", "docs_title": "Vos documents", "docs_intro": "Deux documents accompagnent l&rsquo;étude. Prenez le temps de les lire avant de vous inscrire.", "notice_name": "Note d&rsquo;information", "notice_desc": "Le détail du projet, son déroulement, vos droits et la protection de vos données personnelles. À télécharger et à conserver.", "notice_dl": "⬇ Télécharger", "consent_name": "Formulaire de consentement", "consent_req": "Lecture obligatoire", "consent_desc": "À lire avant de vous inscrire. Vous pourrez l&rsquo;imprimer et l&rsquo;apporter signé le jour de la prise de mesures.", "consent_open": "Ouvrir et lire", "consent_opened": "Document ouvert ✓", "consent_dl": "⬇ Télécharger / imprimer", "join_title": "Participer à l&rsquo;étude", "join_intro": "La prise de mesures a lieu lors d&rsquo;un rendez-vous d&rsquo;environ 30&nbsp;minutes, fin novembre 2026, à Lyon. Pour vous inscrire, confirmez d&rsquo;abord que vous avez lu les deux documents ci-dessus.", "gate_hint": "Ouvrez d&rsquo;abord le formulaire de consentement pour pouvoir cocher cette case.", "check_label": "J&rsquo;ai lu la note d&rsquo;information et le formulaire de consentement, et je comprends en quoi consiste ma participation.", "enroll": "Je souhaite participer", "confirm_title": "Merci de votre intérêt&nbsp;!", "confirm_html": "<p>Dernière étape&nbsp;: imprimez et signez le formulaire de consentement, puis apportez-le le jour de la prise de mesures.</p><p>Écrivez-nous pour convenir d&rsquo;un créneau de rendez-vous (environ 30&nbsp;minutes, fin novembre 2026, à Lyon)&nbsp;:</p>", "write_us": "✉ Nous écrire", "mail_subject": "ReVe — inscription", "foot_leads": "Projet mené par Shaifali Parashar (CNRS, LIRIS, Lyon) et Caroline Huyard (CNRS, CERAPS, Lille).", "foot_funding": "Financé par la Mission pour les Initiatives Transverses et Interdisciplinaires du CNRS.", "credits": "Pictogrammes&nbsp;: Sergio Palao / ARASAAC (arasaac.org), licence CC&nbsp;BY-NC-SA, Gouvernement d&rsquo;Aragon (Espagne).", "schema_img": "SchemaReVe_2026-10-05.svg", "schema_pdf": "SchemaReVe_2026-10-05.pdf", "notice_file": "noteinformation_2026-10-08.doc", "consent_file": "formulaireconsentement_reve_2026-10-06.pdf"}, "en": {"title": "Welcome to the ReVe research project page!", "welcome": "<p style=\"text-align:justify\">Do you have lots of clothes, yet often feel as though you&rsquo;ve got nothing to wear? Do you buy few clothes, partly because you find the range on offer unsatisfactory? Do you feel you buy a reasonable amount of clothes, and would like to talk about it? If, in one way or another, clothing is a subject that interests you, you&rsquo;ve come to the right place.</p>\n<p style=\"text-align:justify\">We&rsquo;re looking for participants to contribute to a research project led by the Centre National de la Recherche Scientifique (CNRS), France&rsquo;s leading public scientific research organisation. Its aim is to better understand the phenomenon of unsatisfactory clothing consumption and to explore a solution.</p>\n<p style=\"text-align:justify\">This project is developing a computer tool designed to provide personalised clothing advice, based on people&rsquo;s body shapes, measurements and colours. It will then be tested on real people &ndash; including you &ndash; to assess the extent to which such a tool can guide their clothing purchases towards items that suit them best, without wasting time or money on buying others. In this approach, clothing is no longer an object defined by characteristics (cheap, durable, breathable, lightweight, iconic, etc.), as fashion designers currently conceive it, but an object valued for its function (dressing a specific person, with their body shape, measurements, colours and practical needs: going to work, cycling, dancing, etc.).</p>\n<p style=\"text-align:justify\">Personalised clothing advice draws on traditional portraiture techniques, where a person&rsquo;s clothes are chosen to complement their figure, proportions and colours (of their hair, eyes and skin). The computer programme begins by taking precise measurements of these features on you, using accurate instruments, and then generates one or more 3D digital portraits of you, dressed in clothes that suit you according to these criteria.</p>\n<p style=\"text-align:justify\">At the same time, we&rsquo;ll have a discussion with you, starting by asking about your experience with clothing and your shopping habits. We&rsquo;ll then show you your digital portrait(s), in which you&rsquo;re dressed in the garments that suit you best and which form the basis of our personalised recommendations. We then ask for your feedback on them and continue the discussion. At the end of this initial consultation, we provide you with a hard copy and a digital copy of your digital portrait(s) showing you wearing the clothes.</p>\n<p style=\"text-align:justify\">Following this consultation, we&rsquo;ll ask you to keep track of your clothing purchases by sending us copies of your clothing receipts on a regular basis.</p>\n<p style=\"text-align:justify\">Six months later, we will get back in touch with you for a second interview, which will also be the final one. We will then discuss with you how your digital portraits, in which you are wearing clothes, have &ndash; or have not &ndash; changed your relationship with clothing and your clothing purchases, and if so, in what way, and in any case, why.</p>\n<p style=\"text-align:justify\"><strong>By taking part in this study, you will receive:</strong></p>\n<ul class=\"benefits\">\n<li>a summary of your key measurements, which may be useful for choosing the right size when buying clothes,</li>\n<li>personalised advice on the types of clothing most likely to suit you,</li>\n<li>a document containing your digital portraits,</li>\n<li>a small reward to compensate you for the time you spend on the study.</li>\n</ul>", "how_title": "How the study works", "schema_alt": "Illustrated diagram of the ReVe project steps", "schema_full": "Open the full diagram (PDF)", "docs_title": "Your documents", "docs_intro": "Two documents go with the study. Please take the time to read them before signing up.", "notice_name": "Information sheet", "notice_desc": "The project in detail, how it unfolds, your rights and how your personal data is protected. Yours to keep.", "notice_dl": "⬇ Download", "consent_name": "Consent form", "consent_req": "Required reading", "consent_desc": "To read before signing up. You can print it and bring it signed on the day your measurements are taken.", "consent_open": "Open and read", "consent_opened": "Document opened ✓", "consent_dl": "⬇ Download / print", "join_title": "Take part in the study", "join_intro": "Measurements are taken at a single appointment of about 30&nbsp;minutes, in late November 2026, in Lyon. To sign up, first confirm that you have read the two documents above.", "gate_hint": "Open the consent form first to enable this checkbox.", "check_label": "I have read the information sheet and the consent form, and I understand what taking part involves.", "enroll": "I&rsquo;d like to take part", "confirm_title": "Thank you for your interest!", "confirm_html": "<p>One last step: print and sign the consent form, then bring it on the day your measurements are taken.</p><p>Write to us to arrange an appointment slot (about 30&nbsp;minutes, late November 2026, in Lyon):</p>", "write_us": "✉ Email us", "mail_subject": "ReVe — sign-up", "foot_leads": "Led by Shaifali Parashar (CNRS, LIRIS, Lyon) and Caroline Huyard (CNRS, CERAPS, Lille).", "foot_funding": "Funded by the CNRS Mission for Transverse and Interdisciplinary Initiatives.", "credits": "Pictograms: Sergio Palao / ARASAAC (arasaac.org), licence CC BY-NC-SA, Government of Aragon (Spain).", "schema_img": "SchemaReVe_2026-10-28_ENG.svg", "schema_pdf": "SchemaReVe_2026-10-28_ENG.pdf", "notice_file": "noteinformation_2026-10-08_en-GB.doc", "consent_file": "formulaireconsentement_reve_2026-10-06_en-GB.pdf"}}</script>
+<script>
+(function(){
+  "use strict";
+  var I = JSON.parse(document.getElementById('i18n').textContent);
+  var EMAIL = "caroline.huyard@univ-lille.fr";
+  var state = { lang:(navigator.language||'fr').slice(0,2)==='en'?'en':'fr', opened:false };
+  function render(){
+    var d=I[state.lang];
+    document.documentElement.lang=state.lang;
+    document.querySelectorAll('[data-i18n]').forEach(function(el){
+      var k=el.getAttribute('data-i18n'); if(d[k]!=null) el.innerHTML=d[k];
+    });
+    document.getElementById('lfr').classList.toggle('active', state.lang==='fr');
+    document.getElementById('len').classList.toggle('active', state.lang==='en');
+    document.getElementById('schemaImg').src=d.schema_img;
+    document.getElementById('schemaImg').alt=d.schema_alt;
+    document.getElementById('schemaFull').href=d.schema_pdf;
+    var nd=document.getElementById('noticeDl'); nd.href=d.notice_file; nd.setAttribute('download','');
+    var cd=document.getElementById('consentDl'); cd.href=d.consent_file; cd.setAttribute('download','');
+    document.getElementById('writeUs').href='mailto:'+EMAIL+'?subject='+encodeURIComponent(d.mail_subject);
+    reflect();
+  }
+  function reflect(){
+    var d=I[state.lang];
+    var btn=document.getElementById('consentOpen'), chk=document.getElementById('readCheck');
+    document.getElementById('gateHint').hidden=state.opened;
+    if(state.opened){ btn.textContent=d.consent_opened; btn.classList.remove('solid'); btn.classList.add('done'); chk.disabled=false; document.getElementById('chkWrap').classList.add('on'); }
+    else { btn.textContent=d.consent_open; btn.classList.add('solid'); btn.classList.remove('done'); chk.disabled=true; document.getElementById('chkWrap').classList.remove('on'); }
+    document.getElementById('enrollBtn').disabled=!(state.opened && chk.checked);
+  }
+  document.getElementById('consentOpen').addEventListener('click', function(){
+    window.open(I[state.lang].consent_file,'_blank','noopener');
+    state.opened=true; reflect();
+  });
+  document.getElementById('readCheck').addEventListener('change', reflect);
+  document.getElementById('enrollBtn').addEventListener('click', function(){
+    document.getElementById('joinForm').hidden=true;
+    var c=document.getElementById('confirmBox'); c.hidden=false; c.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  document.getElementById('lfr').addEventListener('click', function(){ state.lang='fr'; render(); });
+  document.getElementById('len').addEventListener('click', function(){ state.lang='en'; render(); });
+  render();
+})();
+</script>
+</body>
+</html>
